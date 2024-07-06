@@ -7,6 +7,11 @@
     <script src="data.js"></script>
     <title>ACE 7 Employee Logger</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .hidden-label {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class="employee-form">
@@ -21,11 +26,11 @@
             <input type= "text" id="employeeName" name="employeeName" list="employeeName" readonly required> 
             <datalist id="employeeName"class = "employeeName" ></datalist>
 
-            <label for="date">Date:</label>
-            <input type="text" id="date" name="date" readonly><br>
+            <label for="date" class = "hidden-label">Date:</label>
+            <input type="text" id="date" name="date" readonly hidden ><br>
 
-            <label for="geoLocation">Geo Location:</label>
-            <input type="text" id="geoLocation" name="geoLocation" readonly><br>
+            <label for="geoLocation" class = "hidden-label" >Geo Location:</label>
+            <input type="text" id="geoLocation" name="geoLocation" readonly hidden><br>
 
             <video id="camera-stream" autoplay style="width: 100%; max-width: 400px;"></video><br>
 
